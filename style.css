@@ -147,6 +147,28 @@ body{
     font-size:28px;
 }
 
+.popular-info p{
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.popular-info a{
+    display:inline-block;
+    margin-top:10px;
+    padding:12px 30px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.popular-info a:hover{
+    background:#0f172a;
+    transform:scale(1.05);
+}
+
 /* DESTINATIONS */
 
 .destinations{
