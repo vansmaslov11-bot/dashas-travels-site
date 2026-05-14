@@ -1,0 +1,261 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#f5f7fa;
+    color:#222;
+}
+
+/* HEADER */
+
+.header{
+    width:100%;
+    padding:25px 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:#0f172a;
+}
+
+.logo{
+    color:#38bdf8;
+    font-size:30px;
+    font-weight:700;
+}
+
+.nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.hero-overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:white;
+    width:70%;
+}
+
+.hero-content h1{
+    font-size:80px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    line-height:1.7;
+    margin-bottom:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 45px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#38bdf8;
+}
+
+/* POPULAR */
+
+.popular{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.popular h2{
+    font-size:50px;
+    margin-bottom:60px;
+}
+
+.popular-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.popular-card{
+    width:340px;
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.popular-card:hover{
+    transform:translateY(-10px);
+}
+
+.popular-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.popular-info{
+    padding:25px;
+}
+
+.popular-info h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+    font-size:28px;
+}
+
+/* DESTINATIONS */
+
+.destinations{
+    padding:150px 80px 100px;
+    text-align:center;
+}
+
+.destinations h1{
+    margin-bottom:60px;
+    font-size:55px;
+}
+
+.destination-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.destination-card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.destination-card:hover{
+    transform:scale(1.03);
+}
+
+.destination-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.destination-content{
+    padding:25px;
+}
+
+.destination-content h3{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+/* CONTACT */
+
+.contact{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:url('https://images.unsplash.com/photo-1493558103817-58b2924bce98') center/cover no-repeat;
+}
+
+.contact-box{
+    width:500px;
+    background:white;
+    padding:50px;
+    border-radius:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.contact-box h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0f172a;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form textarea{
+    margin-bottom:20px;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:12px;
+    font-size:16px;
+}
+
+form textarea{
+    height:150px;
+    resize:none;
+}
+
+form button{
+    padding:15px;
+    border:none;
+    border-radius:50px;
+    background:#38bdf8;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:#0f172a;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
